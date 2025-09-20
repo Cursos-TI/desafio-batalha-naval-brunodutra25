@@ -1,3 +1,4 @@
+
 // Desafio Batalha Naval - MateCheck
 
 #include <stdio.h>
@@ -29,14 +30,17 @@ int main() {
     }
 
     //Posicionamento do navio 1 na horizontal
-    for (int i=0; i<3; i++) {
-            tabuleiro[1][2+i] = navio1;
-
+    for (int y=1; y<2; y++) {
+        for (int j=1; j<4; j++) {
+            tabuleiro[y][j] = navio1;
+        }
     }
 
     //Posicionamento do navio 2 na vertical
-    for (int j=0; j<3; j++) {
-        tabuleiro[6+j][8] = navio2;
+    for (int y=6; y<9; y++) {
+        for (int j=8; j<9; j++) {
+            tabuleiro[y][j] = navio2;
+        }
     }
 
     //Posicionamento do navio 3 na diagonal
